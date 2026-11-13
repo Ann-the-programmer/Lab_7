@@ -10,7 +10,7 @@ public abstract class Site {
         this.rate = rate;
     }
 
-    public double getBillableAmount() {
+    public final double getBillableAmount() {
 
         return getBaseAmount() + getTaxAmount();
     }
