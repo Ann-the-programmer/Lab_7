@@ -6,7 +6,7 @@ public class ResidentialSite extends Site {
 
     public double getBillableAmount() {
         double base = units * rate;
-        double tax = base * Site.TAX_RATE * 0.2;
+        double tax = base * Site.TAX_RATE;
 
         return base + tax;
     }
